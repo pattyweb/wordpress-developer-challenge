@@ -3,6 +3,7 @@
 get_header();
 ?>
 <body style="background-color: black;"> <!-- Add this style attribute -->
+<section>
     <div class="container-fluid categorias">
         <div class="row">
             <!-- Left Column -->
@@ -78,5 +79,5 @@ get_header();
 
     </div>
 </div>
-
+</section>
 <?php get_footer(); ?>
