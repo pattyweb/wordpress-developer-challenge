@@ -49,7 +49,7 @@
                     }
                     ?>
 
-                    <a href="<?php echo esc_url(get_permalink()); ?>" class="btn border border-white button-scroll">
+                    <a href="<?php echo esc_url(get_permalink()); ?>" class="btn border border-white button-scroll-front">
                         <?php
                         // Display the custom field for video duration
                         $video_duration = get_post_meta(get_the_ID(), 'bx_play_video_duration', true);
@@ -59,7 +59,7 @@
                         ?>
                     </a>
 
-                    <p class="mt-2 text-scroll">
+                    <p class="mt-2 text-scroll-front">
                         <?php
                         // Display the post title with permalink
                         echo '<a href="' . esc_url(get_permalink()) . '">' . get_the_title() . '</a>';
@@ -113,7 +113,7 @@
                     }
                     ?>
 
-                    <a href="<?php echo esc_url(get_permalink()); ?>" class="btn border border-white button-scroll">
+                    <a href="<?php echo esc_url(get_permalink()); ?>" class="btn border border-white button-scroll-front">
                         <?php
                         // Display the custom field for video duration
                         $video_duration = get_post_meta(get_the_ID(), 'bx_play_video_duration', true);
@@ -123,7 +123,7 @@
                         ?>
                     </a>
 
-                    <p class="mt-2 text-scroll">
+                    <p class="mt-2 text-scroll-front">
                         <?php
                         // Display the post title with permalink
                         echo '<a href="' . esc_url(get_permalink()) . '">' . get_the_title() . '</a>';
@@ -177,7 +177,7 @@
                     }
                     ?>
 
-                    <a href="<?php echo esc_url(get_permalink()); ?>" class="btn border border-white button-scroll">
+                    <a href="<?php echo esc_url(get_permalink()); ?>" class="btn border border-white button-scroll-front">
                         <?php
                         // Display the custom field for video duration
                         $video_duration = get_post_meta(get_the_ID(), 'bx_play_video_duration', true);
@@ -187,7 +187,7 @@
                         ?>
                     </a>
 
-                    <p class="mt-2 text-scroll">
+                    <p class="mt-2 text-scroll-front">
                         <?php
                         // Display the post title with permalink
                         echo '<a href="' . esc_url(get_permalink()) . '">' . get_the_title() . '</a>';

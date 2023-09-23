@@ -133,13 +133,21 @@ body{
 }
 
 .button-scroll{
+    font-weight: 600; padding-left: 35px; padding-right: 35px; color:white;
+}
+
+.button-scroll-front{
     margin-left: 5%;
     font-weight: 600; padding-left: 35px; padding-right: 35px; color:white;
 }
 
 .text-scroll{
+    color:white; font-size: 22px; font-weight: 700;
+}
+
+.text-scroll-front{
     margin-left: 5%;
-    color:white; font-size: 22px; font-weight: 600;
+    color:white; font-size: 22px; font-weight: 700;
 }
 
 .bottom-menu{
@@ -248,9 +256,18 @@ iframe {
     .button-scroll{
         font-weight: 400; padding-left: 35px; padding-right: 35px;
     }
+    
+    .button-scroll-front{
+        margin-left:10%;
+        font-weight: 400; padding-left: 35px; padding-right: 35px;
+    }
 
     .text-scroll{
-        font-size: 16px; font-weight: 600;
+        font-size: 16px; font-weight: 700;
+    }
+    .text-scroll-front{
+        margin-left:10%;
+        font-size: 16px; font-weight: 700;
     }
 
     .navbar-toggler{
@@ -350,7 +367,7 @@ iframe {
     }
 
     .categorias-content{
-        margin-left: 5%;
+        padding-left: 8% !important;
     }
     
     .text-series{
