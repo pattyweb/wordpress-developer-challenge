@@ -38,7 +38,6 @@ body{
 }
 
 .hero-section {
-    background-image: url('img/pexels-maxime-francis-2246476.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -234,8 +233,9 @@ iframe {
     color: red !important;
 }
 
-.navbar{
-    padding: 20px !important;
+.navbar {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
 }
 
 @media only screen and (max-width: 740px) {

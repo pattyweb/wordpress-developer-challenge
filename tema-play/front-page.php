@@ -1,16 +1,25 @@
 <?php get_header(); ?>
-
+<?php 
+                    $hero_title = get_theme_mod( 'set_hero_title', 'Seu Título' );
+                    $hero_button_link = get_theme_mod( 'set_hero_button_link', '#' );
+                    $hero_button_text = get_theme_mod( 'set_hero_button_text', 'Saiba mais' );
+                    $hero_button_link_1 = get_theme_mod( 'set_hero_button_link_1', '#' );
+                    $hero_button_text_1 = get_theme_mod( 'set_hero_button_text_1', 'Botão 1' );
+                    $hero_button_link_2 = get_theme_mod( 'set_hero_button_link_2', '#' );
+                    $hero_button_text_2 = get_theme_mod( 'set_hero_button_text_2', 'Botão 2' );
+                    $hero_background = wp_get_attachment_url( get_theme_mod( 'set_hero_background' ) );
+                    ?>
 <!-- Hero section -->
-<section class="hero-section">
+<section class="hero-section" style="background-image: url('<?php echo $hero_background ?>');');">
         <div class="background-overlay"></div>
         <div class="position-relative text-header">
             <!-- Two buttons side by side -->
             <div>
-                <a href="#" style="font-weight: 600; padding-left: 35px; padding-right: 35px; color:black!important;" class="btn btn-light mr-2">Filmes</a>
-                <a href="#" style="font-weight: 600; padding-left: 35px; padding-right: 35px; color:white;" class="btn border border-white">130m</a>
+                <a href="<?php echo $hero_button_link_1; ?>" style="font-weight: 600; padding-left: 35px; padding-right: 35px; color:black!important;" class="btn btn-light mr-2"><?php echo $hero_button_text_1; ?></a>
+                <a href="<?php echo $hero_button_link_2; ?>" style="font-weight: 600; padding-left: 35px; padding-right: 35px; color:white;" class="btn border border-white"><?php echo $hero_button_text_2; ?></a>
             </div>
-            <h1 class="headerText">Pellentesque<br> habitant morbi</h1>
-            <a href="#" style="font-weight: 500; padding: 15px 55px 15px 55px; background-color: red; color:white" class="btn btn">Mais Informações</a>
+            <h1 class="headerText"><?php echo nl2br( $hero_title ); ?></h1>
+            <a href="<?php echo $hero_button_link; ?>" style="font-weight: 500; padding: 15px 55px 15px 55px; background-color: red; color:white" class="btn btn"><?php echo $hero_button_text; ?></a>
         </div>
     </section>
 
