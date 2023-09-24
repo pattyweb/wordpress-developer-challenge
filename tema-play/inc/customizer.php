@@ -5,7 +5,7 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_section(
                 'sec_hero',
                 array(
-                    'title' => 'Hero Section'
+                    'title' => 'Hero'
                 )
             );
 
@@ -22,7 +22,7 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_hero_title',
                 array(
-                    'label' => 'Hero Title',
+                    'label' => 'Títutlo',
                     'description' => 'Escreva seu Título',
                     'section' => 'sec_hero',
                     'type' => 'textarea'
@@ -42,7 +42,7 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_hero_button_text',
                 array(
-                    'label' => 'Hero button text',
+                    'label' => 'Texto do botão',
                     'description' => 'Adicione o texto de seu botão',
                     'section' => 'sec_hero',
                     'type' => 'text'
@@ -61,7 +61,7 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_hero_button_link',
                 array(
-                    'label' => 'Hero button link',
+                    'label' => 'Link do botão',
                     'description' => 'Adicione o link do seu botão',
                     'section' => 'sec_hero',
                     'type' => 'url'
@@ -81,7 +81,7 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_hero_button_text_1',
                 array(
-                    'label' => 'Hero button text',
+                    'label' => 'Texto do botão',
                     'description' => 'Adicione o texto de seu botão',
                     'section' => 'sec_hero',
                     'type' => 'text'
@@ -100,7 +100,7 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_hero_button_link_1',
                 array(
-                    'label' => 'Hero button link_1',
+                    'label' => 'Link do Botão',
                     'description' => 'Adicione o link do seu botão',
                     'section' => 'sec_hero',
                     'type' => 'url'
@@ -119,7 +119,7 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_hero_button_text_2',
                 array(
-                    'label' => 'Hero button text',
+                    'label' => 'Texto do botão',
                     'description' => 'Adicione o texto de seu botão',
                     'section' => 'sec_hero',
                     'type' => 'text'
@@ -139,7 +139,7 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_hero_button_link_2',
                 array(
-                    'label' => 'Hero button link_2',
+                    'label' => 'Link do botão',
                     'description' => 'Adicione o link do seu botão',
                     'section' => 'sec_hero',
                     'type' => 'url'

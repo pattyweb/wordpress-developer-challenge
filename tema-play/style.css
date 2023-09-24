@@ -239,6 +239,7 @@ iframe {
     padding-bottom: 20px !important;
 }
 
+
 @media only screen and (max-width: 767px) {
     .headerText{
         font-size: 40px; 

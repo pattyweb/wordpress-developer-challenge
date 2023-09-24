@@ -21,7 +21,8 @@ get_header();
         // Define the custom query to retrieve video posts in the "series" category
         $args = array(
             'post_type' => 'video', // Change to your custom post type name
-            'posts_per_page' => -1, // Display all video posts in the "series" category
+            'posts_per_page' => 9, // Display all video posts in the "series" category
+            'paged' => $paged, // Use pagination
             'tax_query' => array(
                 array(
                     'taxonomy' => 'video_type', // Your custom taxonomy name
@@ -92,12 +93,22 @@ get_header();
                 </div>
 
                 <?php
-            endwhile;
-            wp_reset_postdata(); // Reset the custom query
-        else :
-            echo '<p style="color:white;font-family: Arial, sans-serif;">No video posts in the "series" category found.</p>';
-        endif;
-        ?>
+                            endwhile;
+                            wp_reset_postdata(); // Reset the custom query
+
+                            // Add pagination links
+                            echo '<div style="margin-right: 10px; font-size: 21px !important; padding-top: 20px;">';
+                            echo paginate_links(array(
+                                'total' => $custom_query->max_num_pages,
+                                'prev_next' => true,
+                                'prev_text' => __('« Anterior'),
+                                'next_text' => __('Próximo »'),
+                            ));
+                            echo '</div>';
+                        else :
+                            echo '<p style="color:white;font-family: Arial, sans-serif;">No video posts in the "series" category found.</p>';
+                        endif;
+                        ?>
 
     </div>
 </div>

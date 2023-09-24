@@ -24,6 +24,7 @@ add_theme_support('custom-logo', array(
     'flex-height' => true,
     'flex-widht' => true
 ));
+add_theme_support('title-tag');
 
 
         add_theme_support('menus');
