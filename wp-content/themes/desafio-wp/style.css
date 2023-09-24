@@ -1,17 +1,9 @@
 /*
-Theme Name: Buildbox Play
-Theme URI: https://pattyweb.com.br/
-Author: Patrícia Rodrigues
-Author URI: https://pattyweb.com.br/
-Description: This theme is for learning purposes only.
-Requires at least: 5.6
-Tested up to: 5.9
-Requires PHP: 8.0
+Theme Name: Play Patricia Rodrigues
+Author: Patricia Rodrigues
 Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: teste-wordpress
-Tags: custom-menu, custom-logo, featured-images
+Text Domain: bx-desafio
+Global Prefix: bx_desafio_
 */
 
 @font-face {
