@@ -43,11 +43,33 @@ get_header();
                 <div class="col-6 col-md-4">
                     <div class="content-box">
                         <a href="<?php the_permalink(); ?>">
-                          <?php
+                        <?php
                     // Display the featured image with permalink
                     if (has_post_thumbnail()) {
                         echo '<a href="' . esc_url(get_permalink()) . '">';
-                        the_post_thumbnail('thumbnail', array('class' => 'img-fluid', 'style' => 'width: 70%; height: 70%;'));
+
+                        // Set up media queries for different screen sizes
+                        echo '<style>';
+                        
+                        // Styles for smaller screens (max-width: 767px)
+                        echo '@media (max-width: 767px) {';
+                        echo '.img-fluid {';
+                        echo 'width: 103px!important;';
+                        echo 'height: 154px!important;';
+                        echo '}';
+                        echo '}';
+                        
+                        // Styles for larger screens (min-width: 768px)
+                        echo '@media (min-width: 768px) {';
+                        echo '.img-fluid {';
+                        echo 'width: 204px!important;';
+                        echo 'height: 307px!important;';
+                        echo '}';
+                        echo '}';
+                        
+                        echo '</style>';
+
+                        the_post_thumbnail('thumbnail', array('class' => 'img-fluid'));
                         echo '</a>';
                     }
                     ?>
@@ -73,7 +95,7 @@ get_header();
             endwhile;
             wp_reset_postdata(); // Reset the custom query
         else :
-            echo '<p style="color:white;">No video posts in the "series" category found.</p>';
+            echo '<p style="color:white;font-family: Arial, sans-serif;">No video posts in the "series" category found.</p>';
         endif;
         ?>
 

@@ -10,6 +10,7 @@
                     $hero_background = wp_get_attachment_url( get_theme_mod( 'set_hero_background' ) );
                     ?>
 <!-- Hero section -->
+<body style="background-color: black;"> <!-- Add this style attribute -->
 <section class="hero-section" style="background-image: url('<?php echo $hero_background ?>');');">
         <div class="background-overlay"></div>
         <div class="position-relative text-header">
@@ -49,11 +50,33 @@
                 ?>
 
                 <div class="content-box">
-                    <?php
+                <?php
                     // Display the featured image with permalink
                     if (has_post_thumbnail()) {
                         echo '<a href="' . esc_url(get_permalink()) . '">';
-                        the_post_thumbnail('thumbnail', array('class' => 'img-fluid', 'style' => 'width: 70%; height: 70%;'));
+
+                        // Set up media queries for different screen sizes
+                        echo '<style>';
+                        
+                        // Styles for smaller screens (max-width: 767px)
+                        echo '@media (max-width: 767px) {';
+                        echo '.img-fluid {';
+                        echo 'width: 125px!important;';
+                        echo 'height: 183px!important;';
+                        echo '}';
+                        echo '}';
+                        
+                        // Styles for larger screens (min-width: 768px)
+                        echo '@media (min-width: 768px) {';
+                        echo '.img-fluid {';
+                        echo 'width: 290px!important;';
+                        echo 'height: 435px!important;';
+                        echo '}';
+                        echo '}';
+                        
+                        echo '</style>';
+
+                        the_post_thumbnail('thumbnail', array('class' => 'img-fluid'));
                         echo '</a>';
                     }
                     ?>
@@ -113,15 +136,36 @@
                 ?>
 
                 <div class="content-box">
-                    <?php
+                <?php
                     // Display the featured image with permalink
                     if (has_post_thumbnail()) {
                         echo '<a href="' . esc_url(get_permalink()) . '">';
-                        the_post_thumbnail('thumbnail', array('class' => 'img-fluid', 'style' => 'width: 70%; height: 70%;'));
+
+                        // Set up media queries for different screen sizes
+                        echo '<style>';
+                        
+                        // Styles for smaller screens (max-width: 767px)
+                        echo '@media (max-width: 767px) {';
+                        echo '.img-fluid {';
+                        echo 'width: 125px!important;';
+                        echo 'height: 183px!important;';
+                        echo '}';
+                        echo '}';
+                        
+                        // Styles for larger screens (min-width: 768px)
+                        echo '@media (min-width: 768px) {';
+                        echo '.img-fluid {';
+                        echo 'width: 290px!important;';
+                        echo 'height: 435px!important;';
+                        echo '}';
+                        echo '}';
+                        
+                        echo '</style>';
+
+                        the_post_thumbnail('thumbnail', array('class' => 'img-fluid'));
                         echo '</a>';
                     }
                     ?>
-
                     <a href="<?php echo esc_url(get_permalink()); ?>" class="btn border border-white button-scroll-front">
                         <?php
                         // Display the custom field for video duration
@@ -177,11 +221,33 @@
                 ?>
 
                 <div class="content-box">
-                    <?php
+                <?php
                     // Display the featured image with permalink
                     if (has_post_thumbnail()) {
                         echo '<a href="' . esc_url(get_permalink()) . '">';
-                        the_post_thumbnail('thumbnail', array('class' => 'img-fluid', 'style' => 'width: 70%; height: 70%;'));
+
+                        // Set up media queries for different screen sizes
+                        echo '<style>';
+                        
+                        // Styles for smaller screens (max-width: 767px)
+                        echo '@media (max-width: 767px) {';
+                        echo '.img-fluid {';
+                        echo 'width: 125px!important;';
+                        echo 'height: 183px!important;';
+                        echo '}';
+                        echo '}';
+                        
+                        // Styles for larger screens (min-width: 768px)
+                        echo '@media (min-width: 768px) {';
+                        echo '.img-fluid {';
+                        echo 'width: 290px!important;';
+                        echo 'height: 435px!important;';
+                        echo '}';
+                        echo '}';
+                        
+                        echo '</style>';
+
+                        the_post_thumbnail('thumbnail', array('class' => 'img-fluid'));
                         echo '</a>';
                     }
                     ?>

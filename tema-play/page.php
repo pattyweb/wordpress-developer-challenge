@@ -33,7 +33,7 @@ if ($custom_query->have_posts()) :
     endwhile;
     wp_reset_postdata(); // Reset the custom query
 else :
-    echo '<p>No videos found.</p>';
+    echo '<p style="font-family: Arial, sans-serif;">No videos found.</p>';
 endif;
 ?>
 

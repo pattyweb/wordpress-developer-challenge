@@ -147,6 +147,7 @@ body{
 .text-scroll-front{
     margin-left: 5%;
     color:white; font-size: 22px; font-weight: 700;
+    padding-right: 15px;
 }
 
 .bottom-menu{
@@ -238,7 +239,7 @@ iframe {
     padding-bottom: 20px !important;
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 767px) {
     .headerText{
         font-size: 40px; 
       }
@@ -271,6 +272,7 @@ iframe {
     .text-scroll-front{
         margin-left:10%;
         font-size: 16px; font-weight: 700;
+        padding-right: 35px;
     }
 
     .navbar-toggler{
