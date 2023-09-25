@@ -97,7 +97,7 @@ get_header();
                             wp_reset_postdata(); // Reset the custom query
 
                             // Add pagination links
-                            echo '<div style="margin-right: 10px; font-size: 21px !important; padding-top: 20px;">';
+                            echo '<div style="font-size: 18px !important; padding-top: 20px; font-family: Circular Spotify Tx T;">';
                             echo paginate_links(array(
                                 'total' => $custom_query->max_num_pages,
                                 'prev_next' => true,
@@ -106,7 +106,7 @@ get_header();
                             ));
                             echo '</div>';
                         else :
-                            echo '<p style="color:white;font-family: Arial, sans-serif;">No video posts in the "documentarios" category found.</p>';
+                            echo '<p style="color:white;font-family: Circular Spotify Tx T, sans-serif;">No video posts in the "documentarios" category found.</p>';
                         endif;
                         ?>
 
