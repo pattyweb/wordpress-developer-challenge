@@ -103,7 +103,6 @@ body{
 }
 
 .slider-container .content-box img {
-    max-width: 100%;
     height: auto;
     margin-left: 5%;
 }
@@ -576,4 +575,13 @@ iframe {
         height: 290px !important;
     }
 
+  }
+
+  @media only screen and (min-device-width: 1366px) and (max-device-width: 1600px) {
+    iframe {
+        width: 100% !important;
+        /* Other styles */
+        margin-left: 0;
+        height: 500px !important;
+    }
   }
