@@ -584,4 +584,14 @@ iframe {
         margin-left: 0;
         height: 500px !important;
     }
+    .content-box img {
+        max-width: 82%;
+        height: auto;
+    }
+    .button-scroll-front{
+        margin-left: 10%;
+    }
+    .text-scroll-front{
+        margin-left: 10%;
+    }
   }
